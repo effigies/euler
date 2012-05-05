@@ -1,4 +1,4 @@
-module Euler (factorials, triangles,
+module Euler (factorials, triangles, pentagonals,
 	primes, isPrime,
 	factors, propers,
 	digits, undigits,
@@ -15,6 +15,8 @@ import Data.Char (ord)
 factorials = scanl (*) 1 [1..]
 
 triangles = scanl1 (+) [1..]
+
+pentagonals = scanl1 (+) [1,4..]
 
 {- Primes -}
 data Wheel a = Wheel a [a]
